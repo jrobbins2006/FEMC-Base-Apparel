@@ -1,0 +1,184 @@
+/* ## Colors
+
+### Primary
+
+- Pink 400: hsl(0, 36%, 70%)
+- Red 500: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Gray 900: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+
+
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    font-family: "Josefin Sans", sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+}
+.container {
+   display: flex;
+   flex-direction: column;
+    margin-top: 2rem;
+}
+.logo {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    
+}
+
+.logo img {
+    height: 20px;
+}
+
+.hero-image {
+    margin-bottom: 4rem;
+    
+}
+
+.text {
+    margin: 2rem;
+    text-align: center;
+    width: 83%;
+    
+}
+
+.text-header {
+    margin-bottom: 1rem;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 10px;
+    line-height: 1;
+    text-align: center;
+    color:  hsl(0, 6%, 24%)
+}
+.text-header-highlight {
+    color: hsl(0, 36%, 70%);
+    font-weight: 100;
+    
+    
+}
+
+.text-p {
+    font-size:14px;
+    line-height: 1.55;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input-container {
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 28px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    
+
+}
+input {
+    border: none;
+    font-weight: 100;
+    width:70%;
+    margin-left: 2rem;
+    
+}
+input::placeholder {
+    color:hsl(0, 74%, 74%);
+    font-size:16px;
+    line-height: 2.15;
+    letter-spacing: 0px;
+    font-weight: 100;
+    padding-left:1rem;
+}
+
+input:focus {
+    outline:none;
+}
+
+button {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 64px;
+    height: 48px;
+    border-radius: 28px;
+    border: none;
+
+}
+#error-icon {
+    display: none;
+    padding: 12px .5rem;
+
+}
+#error-message {
+    display: none;
+    margin-left: 2rem;
+}
+
+@media (min-width: 768px) {
+    body {
+     background-image: url(./images/bg-pattern-desktop.svg);
+    }
+    .container {
+        flex-direction: row;
+        justify-content: flex-end;
+        
+        margin-top: 0;
+        margin-left: auto;
+
+        max-width: 1275px;
+        
+    }
+
+    .logo-and-text {
+        margin-right: auto;
+    }
+
+
+    .logo {
+        order: -3;
+        margin-top: 5rem;
+        margin-bottom: 8.5rem;
+    }
+
+    
+
+    .text {
+        order: -3;
+        max-width: 425px;
+    
+    }
+
+    .text-header {
+        text-align: left;
+        font-size: 64px;
+        font-weight: 400;
+        letter-spacing: 17px;
+    
+    }
+
+
+
+
+
+
+
+    .text-p {
+        text-align: left;
+        margin-bottom: 2rem;
+        font-size:16px;
+        line-height: 2.15;
+        
+    }

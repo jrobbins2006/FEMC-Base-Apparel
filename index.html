@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+<div class="logo-and-text">.  <!-- logo and text-->
+  <!-- LOGO  -->
+  <div class="logo"> 
+      <img src="./images/logo.svg" alt="base Apparel logo">
+  </div> <!-- LOGO  -->
+
+
+
+
+<!-- heading text and form -->
+   <div class="text">
+    <h1 class="text-header"><span class="text-header-highlight">We're</span> coming soon</h1>
+    <p class="text-p">
+    Hello fellow shoppers! We're currently building our new fashion store. 
+    Add your email below to stay up-to-date with announcements and our launch deals.
+    </p>
+    <form>
+      <div class="input-container"> <!-- form input-->
+      <input type="email" name="email" id="email" placeholder="Email Address" required>
+        <label for="email">
+          <img id="error-icon" src="./images/icon-error.svg" alt="" srcset="">
+        </label>
+        <button type="submit" onclick="submitEmail(event)"><img src="./images/icon-arrow.svg" alt="" srcset=""></button>
+        
+      </div> <!--form input -->
+      <p id="error-message">
+          Please provide a valid email
+        </p>
+    </form>
+  </div> <!-- heading text and form -->
+
+  </div> <!--logo and text-->
+<!-- hero image -->
+     <div class="hero-image">
+    <picture>
+     <picture>
+  <source 
+    media="(min-width: 768px)" 
+    srcset="./images/hero-desktop.jpg">
+  <img src="./images/hero-mobile.jpg"  alt="Hero image" >
+</picture>
+    </picture>
+  </div> <!-- hero image -->
+</div>
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
